@@ -1,16 +1,16 @@
 #!/bin/bash
 # //====================================================
-# //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	elliez
+# //	System Testing:Debian 12
+# //	Author:	shan0h
 # //	Dscription: Xray Menu Management
-# //	email: elliez667@gmail.com
-# //  telegram: https://t.me/todfix667
+# //	email: shan0h34@gmail.com
+# //  telegram: https://t.me/shan0h
 # //====================================================
-# // font color configuration | NEVERMORESSH AUTOSCRIPT
+# // font color configuration | FEVERDREAM AUTOSCRIPT
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 TIMES="10"
-CHATID="-1001891259267"
-KEY="2145515560:AAE9WqfxZzQC-FYF1VUprICGNomVfv6OdTU"
+CHATID="Your_ChatID"
+KEY="Your_Telegram_Keys"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 domain=$(cat /etc/xray/domain)
 PUB=$(cat /etc/slowdns/server.pub)
@@ -111,10 +111,9 @@ VMESS_OPOK=`cat<<EOF
 EOF`
 cat >/var/www/html/vmess-$user.txt <<-END
 ====================================================================
-             P R O J E C T  O F  N E V E R M O R E S S H
-                       [Freedom Internet]
+                        F E V E R D R E A M
 ====================================================================
-        https://github.com/NevermoreSSH/VVV
+                https://github.com/Shan0h/FeverDream
 ====================================================================
               Format Vmess WS (CDN)
 ====================================================================
@@ -249,38 +248,38 @@ fi
 echo "### ${user} ${exp} ${uuid}" >>/etc/vmess/.vmess.db
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "\e[42m    Xray/Vmess Account     \E[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Remarks      : ${user}" | tee -a /etc/nevermoressh/user.log
-echo -e "Domain       : ${domain}" | tee -a /etc/nevermoressh/user.log
-echo -e "Host Slowdns : ${NS}" | tee -a /etc/nevermoressh/user.log
-echo -e "Pub Key      : ${PUB}" | tee -a /etc/nevermoressh/user.log
-#echo -e "Location     : $CITY" | tee -a /etc/nevermoressh/user.log
-echo -e "User Quota   : ${Quota} GB" | tee -a /etc/nevermoressh/user.log
-echo -e "Port TLS     : 443" | tee -a /etc/nevermoressh/user.log
-echo -e "Port NTLS    : 80, 8080, 2086" | tee -a /etc/nevermoressh/user.log
-echo -e "Port DNS     : 443, 53 " | tee -a /etc/nevermoressh/user.log
-echo -e "Port GRPC    : 443" | tee -a /etc/nevermoressh/user.log
-echo -e "User ID      : ${uuid}" | tee -a /etc/nevermoressh/user.log
-echo -e "AlterId      : 0" | tee -a /etc/nevermoressh/user.log
-echo -e "Security     : auto" | tee -a /etc/nevermoressh/user.log
-echo -e "Network      : WS or gRPC" | tee -a /etc/nevermoressh/user.log
-echo -e "Path TLS     : (/multi path) " | tee -a /etc/nevermoressh/user.log
-echo -e "Path NLS     : (/multi path) " | tee -a /etc/nevermoressh/user.log
-echo -e "Path Dynamic : CF-XRAY:http://bug.com " | tee -a /etc/nevermoressh/user.log
-echo -e "ServiceName  : vmess-grpc" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Link TLS     : ${vmesslink1}" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Link NTLS    : ${vmesslink2}" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Link GRPC    : ${vmesslink3}" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Format OpenClash : https://${domain}:81/vmess-$user.txt" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Expired On : $exp" | tee -a /etc/nevermoressh/user.log
-echo -e "" | tee -a /etc/nevermoressh/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "\e[42m    Xray/Vmess Account     \E[0m" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Remarks      : ${user}" | tee -a /etc/feverdream/user.log
+echo -e "Domain       : ${domain}" | tee -a /etc/feverdream/user.log
+echo -e "Host Slowdns : ${NS}" | tee -a /etc/feverdream/user.log
+echo -e "Pub Key      : ${PUB}" | tee -a /etc/feverdream/user.log
+#echo -e "Location     : $CITY" | tee -a /etc/feverdream/user.log
+echo -e "User Quota   : ${Quota} GB" | tee -a /etc/feverdream/user.log
+echo -e "Port TLS     : 443" | tee -a /etc/feverdream/user.log
+echo -e "Port NTLS    : 80, 8080, 2086" | tee -a /etc/feverdream/user.log
+echo -e "Port DNS     : 443, 53 " | tee -a /etc/feverdream/user.log
+echo -e "Port GRPC    : 443" | tee -a /etc/feverdream/user.log
+echo -e "User ID      : ${uuid}" | tee -a /etc/feverdream/user.log
+echo -e "AlterId      : 0" | tee -a /etc/feverdream/user.log
+echo -e "Security     : auto" | tee -a /etc/feverdream/user.log
+echo -e "Network      : WS or gRPC" | tee -a /etc/feverdream/user.log
+echo -e "Path TLS     : (/multi path) " | tee -a /etc/feverdream/user.log
+echo -e "Path NLS     : (/multi path) " | tee -a /etc/feverdream/user.log
+echo -e "Path Dynamic : CF-XRAY:http://bug.com " | tee -a /etc/feverdream/user.log
+echo -e "ServiceName  : vmess-grpc" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Link TLS     : ${vmesslink1}" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Link NTLS    : ${vmesslink2}" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Link GRPC    : ${vmesslink3}" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Format OpenClash : https://${domain}:81/vmess-$user.txt" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Expired On : $exp" | tee -a /etc/feverdream/user.log
+echo -e "" | tee -a /etc/feverdream/user.log
 read -n 1 -s -r -p "Press any key to back on menu"
 
 menu
