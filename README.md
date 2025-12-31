@@ -3,7 +3,7 @@
 <h2 align="center"> Supported Linux Distribution</h2>
 <p align="center"><img src="https://1000logos.net/wp-content/uploads/2023/04/Debian-logo.png"width="400"></p>
 <p align="center"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2012&message=Bookworm&color=purple"> 
-<h1 align="center">V0.1 (BETA) (Edited By @Shan0h)
+<h1 align="center">V0.2 (BETA) (Edited By @Shan0h)
 </p>
 
 ### TESTING ON OS 
@@ -79,6 +79,9 @@ The solution simple install: `apt-get install ca-certificates`
 * Squid problem, disable permanent
 -- Try check config/squid.conf 
 * GRPC not working
+- VLESS TLS WORKING
+x VLESS NTLS NOT WORKING
+
 
 ### Credits
 - [Dharak36](https://github.com/dharak36/Xray-core)
