@@ -1,3 +1,4 @@
+#Not Updated
 #!/bin/bash
 GIT_CMD="https://github.com/errorcode86/bbrplus/raw/main/Debian9/x86_64/"
 startbbr() {
