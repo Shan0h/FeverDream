@@ -28,7 +28,7 @@ TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
 KEY="Your_Telegram_Keys"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-REPO="https://raw.githubusercontent.com/NevermoreSSH/VVV/main/update/"
+REPO="https://raw.githubusercontent.com/Shan0h/FeverDream/main/update/"
 APT="apt-get -y install"
 start=$(date +%s)
 
