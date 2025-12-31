@@ -16,7 +16,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 
 ### System Information
-TANGGAL=$(date '+%Y-%m-%d')
+DATETODAY=$(date '+%Y-%m-%d')
 TIMES="10"
 NAMES=$(whoami)
 IMP="wget -q -O"    
@@ -26,8 +26,8 @@ MYIP=$(wget -qO- ipinfo.io/ip)
 CITY=$(curl -s ipinfo.io/city)
 TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
-KEY="2145515560:AAE9WqfxZzQC-FYF1VUprICGNomVfv6OdTU"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
+TOKEN="YOUR_TELEGRAM_BOT_KEY"
+URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 REPO="https://raw.githubusercontent.com/Shan0h/FeverDream/main/"
 APT="apt-get -y install "
 domain=$(cat /root/domain)
@@ -383,7 +383,7 @@ touch /root/.install.log
 cat >/root/tmp <<-END
 #!/bin/bash
 #vps
-### FeverDreamTunnel $TANGGAL $MYIP
+### FeverDreamTunnel $DATETODAY $MYIP
 END
 ####
 FeverDream() {
