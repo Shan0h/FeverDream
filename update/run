@@ -1,12 +1,12 @@
 #!/bin/bash
 # //====================================================
-# //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	elliez667
+# //	System Testing:Debian 12
+# //	Author:	shan0h
 # //	Dscription: Xray Menu Management
-# //	email: elliez667@gmail.com
-# //  telegram: https://t.me/todfix667
+# //	email: shan0h34@gmail.com
+# //  telegram: https://t.me/shan0h
 # //====================================================
-# // font color configuration | AUTOSCRIPT BY NEVERMORESSH
+# // font color configuration | AUTOSCRIPT BY FEVERDREAM
 # COLOR VALIDATION
 clear
 RED='\033[0;31m'
@@ -27,7 +27,7 @@ freq=$(awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo)
 cores=$(awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo)
 cname=$(awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo)
 Exp="Never Expired"
-Name="NevermoreSSH Tunnel"
+Name="FeverDream Tunnel"
 Open_SSH=$(systemctl status ssh | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 Dropbear=$(systemctl status dropbear | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 Dropbear_Websocket=$(systemctl status dropbear | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
