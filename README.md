@@ -85,3 +85,4 @@ The solution simple install: `apt-get install ca-certificates`
 
 ### Credits
 - [Dharak36](https://github.com/dharak36/Xray-core)
+- [Nevermore](https://github.com/NevermoreSSH)
