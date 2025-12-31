@@ -6,7 +6,7 @@
 # //	email: shan0h34@gmail.com
 # //  telegram: https://t.me/shan0h
 # //====================================================
-# // font color configuration | NEVERMORE SSH AUTOSCRIPT
+# // font color configuration | FEVERDREAM AUTOSCRIPT
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 clear
 NUMBER_OF_CLIENTS=$(grep -c -E "^#ss# " "/etc/xray/config.json")
