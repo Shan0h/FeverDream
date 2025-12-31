@@ -1,9 +1,9 @@
 <h1 align="center">
-<h1 align="center">♦️Autoscript SSH XRAYS Websocket Multiport (BETA)♦️
+<h1 align="center">♦️Autoscript SSH XRAYS Websocket Multiport♦️
 <h2 align="center"> Supported Linux Distribution</h2>
 <p align="center"><img src="https://1000logos.net/wp-content/uploads/2023/04/Debian-logo.png"width="400"></p>
 <p align="center"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2012&message=Bookworm&color=purple"> 
-<h1 align="center">V0.1 Beta (Edited By @Shan0h)
+<h1 align="center">V0.1 (BETA) (Edited By @Shan0h)
 </p>
 
 ### TESTING ON OS 
