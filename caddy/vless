@@ -2,7 +2,7 @@
 @ws_path {
 path /worryfree
 path /xray
-path /nevermoressh
+path /feverdrean
 path /*
 
 }
