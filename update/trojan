@@ -1,12 +1,12 @@
 #!/bin/bash
 # //====================================================
-# //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	elliez
+# //	System Testing:Debian 12
+# //	Author:	shan0h
 # //	Dscription: Xray Menu Management
-# //	email: elliez667@gmail.com
-# //  telegram: https://t.me/todfix667
+# //	email: shan0h34@gmail.com
+# //  telegram: https://t.me/shan0h
 # //====================================================
-# // font color configuration | NEVERMORE SSH AUTOSCRIPT
+# // font color configuration | FEVERDREAM AUTOSCRIPT
 clear
 grenbo="\e[92;1m"
 NC='\033[0m'
