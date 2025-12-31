@@ -338,14 +338,6 @@ function tambahan(){
     #wget -qO /tmp/bbr.sh "${REPO}server/bbr.sh" >/dev/null 2>&1
     #chmod +x /tmp/bbr.sh && bash /tmp/bbr.sh
 
-    # > Make a swap of 1GB
-    dd if=/dev/zero of=/swapfile bs=1024 count=1048576
-    mkswap /swapfile
-    chown root:root /swapfile
-    chmod 0600 /swapfile >/dev/null 2>&1
-    swapon /swapfile >/dev/null 2>&1
-    sed -i '$ i\/swapfile      swap swap   defaults    0 0' /etc/fstab
-
     # > Tuned Device
     tuned-adm profile network-latency
     cat >/etc/msmtprc <<EOF
