@@ -5,10 +5,13 @@
 <p align="center"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%209&message=Stretch&color=purple"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2010&message=Buster&color=purple">  <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2018&message=Lts&color=red"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2020&message=Lts&color=red">
 <h1 align="center">V0.1 Beta (Edited By @Shan0h)
 </p>
-  
+
+Testing in :
+- Debian 12
+
 ### INSTALL SCRIPT
 
-Update Debian 9/10/11
+Update Debian 12
 <pre><code>apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot</code></pre>
 Update Ubuntu 18/20
 <pre><code>apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && sleep 2 && reboot</code></pre>
