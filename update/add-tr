@@ -1,20 +1,20 @@
 #!/bin/bash
 # //====================================================
-# //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	elliez
+# //	System Testing:Debian 12
+# //	Author:	shan0h
 # //	Dscription: Xray Menu Management
-# //	email: elliez667@gmail.com
-# //  telegram: https://t.me/todfix667
+# //	email: shan0h34@gmail.com
+# //  telegram: https://t.me/shan0h
 # //====================================================
-# // font color configuration | NEVERMORESSH AUTOSCRIPT
+# // font color configuration | FEVERDREAM AUTOSCRIPT
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 domain=$(cat /etc/xray/domain)
 PUB=$(cat /etc/slowdns/server.pub)
 CITY=$(cat /etc/xray/city)
 NS=$(cat /etc/xray/dns)
 TIMES="10"
-CHATID="-1001891259267"
-KEY="2145515560:AAE9WqfxZzQC-FYF1VUprICGNomVfv6OdTU"
+CHATID="YOUR_CHATID"
+KEY="YOUR_TELEGRAM_KEYS"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
@@ -48,10 +48,9 @@ sed -i '/#trojangrpc$/a\#! '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 cat >/var/www/html/trojan-$user.txt <<-END
 ====================================================================
-             P R O J E C T  O F  N E V E R M O R E S S H
-                       [Freedom Internet]
+             P R O J E C T  F E V E R D R E A M
 ====================================================================
-        https://github.com/NevermoreSSH/VVV
+        https://github.com/Shan0h/FeverDream
 ====================================================================
               Format Trojan GO/WS (CDN)
 ====================================================================
@@ -122,29 +121,29 @@ fi
 echo "### ${user} ${exp} ${uuid}" >>/etc/trojan/.trojan.db
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "\e[42m    Xray/Trojan Account    \E[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Remarks     : ${user}" | tee -a /etc/nevermoressh/user.log
-echo -e "Host        : ${domain}" | tee -a /etc/nevermoressh/user.log
-echo -e "Host Slowdns: ${NS}" | tee -a /etc/nevermoressh/user.log
-echo -e "Pub Key     : ${PUB}" | tee -a /etc/nevermoressh/user.log
-#echo -e "Location    : $CITY" | tee -a /etc/nevermoressh/user.log
-echo -e "User Quota  : ${Quota} GB" | tee -a /etc/nevermoressh/user.log
-echo -e "Port DNS    : 443, 53 " | tee -a /etc/nevermoressh/user.log
-echo -e "Port TLS    : 443" | tee -a /etc/nevermoressh/user.log
-echo -e "port        : 443" | tee -a /etc/nevermoressh/user.log
-echo -e "Key         : ${uuid}" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Link WS    : ${trojanlink}" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Link GRPC  : ${trojanlink1}" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Format OpenClash : https://${domain}:81/trojan-$user.txt" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "Expired On : $exp" | tee -a /etc/nevermoressh/user.log
-echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/nevermoressh/user.log
-echo -e "" | tee -a /etc/nevermoressh/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "\e[42m    Xray/Trojan Account    \E[0m" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Remarks     : ${user}" | tee -a /etc/feverdream/user.log
+echo -e "Host        : ${domain}" | tee -a /etc/feverdream/user.log
+echo -e "Host Slowdns: ${NS}" | tee -a /etc/feverdream/user.log
+echo -e "Pub Key     : ${PUB}" | tee -a /etc/feverdream/user.log
+#echo -e "Location    : $CITY" | tee -a /etc/feverdream/user.log
+echo -e "User Quota  : ${Quota} GB" | tee -a /etc/feverdream/user.log
+echo -e "Port DNS    : 443, 53 " | tee -a /etc/feverdream/user.log
+echo -e "Port TLS    : 443" | tee -a /etc/feverdream/user.log
+echo -e "port        : 443" | tee -a /etc/feverdream/user.log
+echo -e "Key         : ${uuid}" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Link WS    : ${trojanlink}" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Link GRPC  : ${trojanlink1}" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Format OpenClash : https://${domain}:81/trojan-$user.txt" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "Expired On : $exp" | tee -a /etc/feverdream/user.log
+echo -e "\033[1;93m───────────────────────────\033[0m" | tee -a /etc/feverdream/user.log
+echo -e "" | tee -a /etc/feverdream/user.log
 read -n 1 -s -r -p "Press any key to back on menu"
 
 menu
