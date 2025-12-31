@@ -18,9 +18,6 @@
 
 ### INSTALL SCRIPT
 
-Update Debian 12
-<pre><code>apt update -y && apt upgrade -y</code></pre>
-
 Script Setup ( ipv4 only )
 <pre><code>apt update -y && apt upgrade -y && apt dist-upgrade -y && apt install -y screen wget curl && wget https://raw.githubusercontent.com/Shan0h/FeverDream/main/main.sh && chmod +x main.sh && sed -i -e 's/\r$//' main.sh && screen -S setup ./main.sh</code></pre>
 or ( ipv4 + ipv6 )
