@@ -1,6 +1,6 @@
 [Unit]
 Description=Limit Usage Xray Service
-Documentation=NEVERMORESSH
+Documentation=FeverDream
 After=syslog.target network-online.target
 
 [Service]
