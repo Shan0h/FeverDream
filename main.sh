@@ -508,4 +508,5 @@ finish
 
 rm ~/.bash_history
 sleep 10
+print_ok "Siap Dipasang, Ready untuk restart!"
 reboot
