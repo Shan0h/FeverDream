@@ -387,7 +387,7 @@ cat >/root/tmp <<-END
 ### FeverDreamTunnel $DATETODAY $MYIP
 END
 ####
-FeverDream() {
+feverdream() {
     data=($(cat /root/tmp | grep -E "^### " | awk '{print $2}'))
     for user in "${data[@]}"; do
         exp=($(grep -E "^### $user" "/root/tmp" | awk '{print $3}'))
