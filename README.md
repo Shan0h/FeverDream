@@ -7,7 +7,7 @@
 </p>
 
 ### TESTING ON OS 
-- Debian 12
+- Debian 12 (1/1/2026)
 
 ### ADDITIONAL FEATURES
 - Add 1GB SwapRAM
