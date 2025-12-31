@@ -14,7 +14,7 @@ function caddy(){
     cat >/etc/caddy/Caddyfile <<-EOF
 $domain:443
 {
-    tls taibabi17@gmail.com
+    tls shan0h34@gmail.com
     encode gzip
 
     handle_path /vless {
