@@ -13,8 +13,8 @@ PUB=$(cat /etc/slowdns/server.pub)
 CITY=$(cat /etc/xray/city)
 NS=$(cat /etc/xray/dns)
 TIMES="10"
-CHATID="-1001891259267"
-KEY="2145515560:AAE9WqfxZzQC-FYF1VUprICGNomVfv6OdTU"
+CHATID="Your_ChatID"
+KEY="Your_Telegram_Keys"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
