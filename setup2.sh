@@ -113,7 +113,7 @@ function dir_xray() {
     # mkdir -p /usr/sbin/xray/
     mkdir -p /var/log/xray/
     mkdir -p /var/www/html/
-    mkdir -p /etc/nevermoressh/
+    mkdir -p /etc/feverdream/
 #    chmod +x /var/log/xray
     touch /var/log/xray/{access.log,error.log}
     chmod 777 /var/log/xray/*.log
@@ -159,7 +159,7 @@ function install_xray(){
     curl -s ipinfo.io/city >> /etc/xray/city
     curl -s ipinfo.io/org | cut -d " " -f 2-10 >> /etc/xray/isp
     xray_latest="$(curl -s https://api.github.com/repos/dharak36/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
-    xraycore_link="https://github.com/NevermoreSSH/Xcore-custompath/releases/download/Xray-linux-64-v1.6.5.1/Xray-linux-64-v1.6.5.1"
+    xraycore_link="https://github.com/Shan0h/Xcore-custompath/releases/download/Xray-linux-64-v1.6.5.1/Xray-linux-64-v1.6.5.1"
     curl -sL "$xraycore_link" -o xray
 #    unzip -q xray.zip && rm -rf xray.zip
     mv xray /usr/sbin/xray
@@ -255,7 +255,7 @@ function download_config(){
     chmod 644 /etc/default/dropbear
     wget -q -O /etc/banner "${REPO}config/banner" >/dev/null 2>&1
     
-    # > Add menu, thanks to NevermoreSSH <3
+    # > Add menu, thanks to Shan0h <3
     wget -O /tmp/menu-master.zip "${REPO}config/menu.zip" >/dev/null 2>&1
     mkdir /tmp/menu
     7z e  /tmp/menu-master.zip -o/tmp/menu/ >/dev/null 2>&1
@@ -360,8 +360,8 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user taibabihutan17@gmail.com
-from taibabihutan17@gmail.com
+user shan0h34@gmail.com
+from shan0h34@gmail.com
 password romanisti
 logfile ~/.msmtp.log
 EOF
@@ -379,7 +379,7 @@ print_ok "Selesai pemasangan modul tambahan"
 
 
 ########## SETUP FROM HERE ##########
-# ORIGINAL SCRIPT BY NEVERMORESSH   #
+# ORIGINAL SCRIPT BY FEVER DREAM   #
 #####################################
 echo "INSTALLING SCRIPT..."
 
@@ -387,10 +387,10 @@ touch /root/.install.log
 cat >/root/tmp <<-END
 #!/bin/bash
 #vps
-### NevermoreSSHTunnel $TANGGAL $MYIP
+### FeverDreamTunnel $TANGGAL $MYIP
 END
 ####
-NEVERMORESSH() {
+FEVERDREAM() {
     data=($(cat /root/tmp | grep -E "^### " | awk '{print $2}'))
     for user in "${data[@]}"; do
         exp=($(grep -E "^### $user" "/root/tmp" | awk '{print $3}'))
