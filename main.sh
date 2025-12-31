@@ -20,7 +20,7 @@ DATETODAY=$(date '+%Y-%m-%d')
 TIMES="10"
 NAMES=$(whoami)
 IMP="wget -q -O"    
-CHATID="1036440597"
+CHATID="Your_ChatID"
 LOCAL_DATE="/usr/bin/"
 MYIP=$(wget -qO- ipinfo.io/ip)
 CITY=$(curl -s ipinfo.io/city)
@@ -84,16 +84,17 @@ function first_setup(){
 
 ### Update and remove packages
 function base_package() {
-    sudo apt-get autoremove -y man-db apache2 ufw exim4 firewalld snapd* -y
+    echo "Remove Base Package Exist"
+	sudo apt-get autoremove -y man-db apache2 ufw exim4 firewalld snapd* -y
     clear
-    print_install "Install the required packages"
+    echo "Install the required packages"
     sysctl -w net.ipv6.conf.all.disable_ipv6=1 >/dev/null 2>&1
     sysctl -w net.ipv6.conf.default.disable_ipv6=1  >/dev/null 2>&1
     sudo apt install software-properties-common -y
-    sudo add-apt-repository ppa:vbernat/haproxy-2.7 -y
+    sudo apt install haproxy -y
     sudo apt update && apt upgrade -y
     # linux-tools-common util-linux gnupg gnupg2 gnupg1  \
-    sudo apt install squid nginx zip pwgen openssl netcat bash-completion  \
+    sudo apt install squid nginx zip pwgen openssl netcat-traditional bash-completion  \
     curl socat xz-utils wget apt-transport-https dnsutils socat \
     tar wget curl ruby zip unzip p7zip-full python3-pip haproxy libc6  \
     msmtp-mta ca-certificates bsd-mailx iptables iptables-persistent netfilter-persistent \
@@ -110,7 +111,7 @@ function dir_xray() {
     # mkdir -p /usr/sbin/xray/
     mkdir -p /var/log/xray/
     mkdir -p /var/www/html/
-    mkdir -p /etc/FeverDream/
+    mkdir -p /etc/feverdream/
 #    chmod +x /var/log/xray
     touch /var/log/xray/{access.log,error.log}
     chmod 777 /var/log/xray/*.log
@@ -140,7 +141,7 @@ function pasang_ssl() {
     mkdir /root/.acme.sh
     systemctl stop $STOPWEBSERVER
     systemctl stop nginx
-    curl https://raw.githubusercontent.com/Shan0h/VVV/main/acme.sh -o /root/.acme.sh/acme.sh
+    curl https://raw.githubusercontent.com/Shan0h/FeverDream/main/acme.sh -o /root/.acme.sh/acme.sh
     chmod +x /root/.acme.sh/acme.sh
     /root/.acme.sh/acme.sh --upgrade --auto-upgrade
     /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
@@ -156,7 +157,7 @@ function install_xray(){
     curl -s ipinfo.io/city >> /etc/xray/city
     curl -s ipinfo.io/org | cut -d " " -f 2-10 >> /etc/xray/isp
     xray_latest="$(curl -s https://api.github.com/repos/dharak36/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
-    xraycore_link="https://github.com/FeverDream/Xcore-custompath/releases/download/Xray-linux-64-v1.6.5.1/Xray-linux-64-v1.6.5.1"
+    xraycore_link="https://github.com/Shan0h/Xcore-custompath/releases/download/latest/xray-linux-64-v25.3.31"
     curl -sL "$xraycore_link" -o xray
 #    unzip -q xray.zip && rm -rf xray.zip
     mv xray /usr/sbin/xray
@@ -199,7 +200,7 @@ LimitNOFILE=1000000
 WantedBy=multi-user.target
 
 EOF
-print_success "Xray C0re"
+print_success "Xray Core"
 }
 
 ### Install OpenVPN
@@ -356,8 +357,8 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user taibabihutan17@gmail.com
-from taibabihutan17@gmail.com
+user shan0h34@gmail.com
+from shan0h34@gmail.com
 password romanisti
 logfile ~/.msmtp.log
 EOF
@@ -506,7 +507,7 @@ function finish(){
     # fi
 }
 cd /tmp
-FeverDream
+feverdream
 first_setup
 dir_xray
 add_domain
