@@ -77,6 +77,7 @@ The solution simple install: `apt-get install ca-certificates`
 
 ### BUG
 * Squid problem, disable permanent
+-- Try check config/squid.conf 
 * GRPC not working
 
 ### Credits
