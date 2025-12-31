@@ -6,10 +6,17 @@
 <h1 align="center">V0.1 Beta (Edited By @Shan0h)
 </p>
 
-### INSTALL SCRIPT
-
-Testing in :
+### TESTING ON OS 
 - Debian 12
+
+### ADDITIONAL FEATURES
+- Add 1GB SwapRAM
+- Dynamic installation
+- Tuning profiles on the server
+- Xray Core by @dharak36
+- Added fail2ban
+
+### INSTALL SCRIPT
 
 Update Debian 12
 <pre><code>apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot</code></pre>
@@ -28,16 +35,6 @@ If problem "ERROR: The certificate of 'raw.githubusercontent.com' is not trusted
 
 
 The solution simple install: `apt-get install ca-certificates`
-
-### TESTED ON OS 
-- DEBIAN 10 & UBUNTU 20.04
-
-### ADDITIONAL FEATURES
-- Add 1GB SwapRAM
-- Dynamic installation
-- Tuning profiles on the server
-- Xray Core by @dharak36
-- Added fail2ban
 
 ### PORT INFO
 ```
